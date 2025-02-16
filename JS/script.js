@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <tr class="border-b border-gray-700">
                         <td class="py-2 px-4">${donation.nama}</td>
                         <td class="py-2 px-4">${donation.note}</td>
-                        <td class="py-2 px-4 text-yellow-500">${donation.jumlah}</td>
+                        <td class="py-2 px-4 text-[#c99976]">${donation.jumlah}</td>
                     </tr>
                 `;
                 tableBody.innerHTML += row;
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div>
                         <div class="text-center my-10" data-aos="fade-up">
                             <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
-                                <span class="text-yellow-500">${category.category}</span>
+                                <span class="text-[#c99976]">${category.category}</span>
                             </h1>
                             <p class="text-sm">${category.description}</p>
                         </div>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 category.members.forEach(member => {
                     categoryHTML += `
                         <div class="flex flex-col items-center bg-black/50 p-5 rounded-2xl max-w-xs w-full sm:w-48 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                            <img src="${member.image}" alt="${member.name}" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 border-2 border-yellow-500 shadow-md">
+                            <img src="${member.image}" alt="${member.name}" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 border-2 border-[#c99976] shadow-md">
                             <p class="text-sm sm:text-base font-semibold">${member.name}</p>
                             <p class="text-sm sm:text-base font-light">${member.role}</p>
                         </div>
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const leaderboardData = await response.json();
 
         leaderboardList.innerHTML = leaderboardData.map(player => `
-            <div class="flex items-center gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+            <div class="flex items-center gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg hover:shadow-xl transition-all border-2 border-[#c99976] ">
                 <div class="w-12 h-12 sm:w-14 sm:h-14">
                     <img src="${player.image}" alt="${player.season}" class="w-full h-full object-cover rounded-full border-2 border-gray-500">
                 </div>
