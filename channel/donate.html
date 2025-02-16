@@ -209,28 +209,7 @@
                                         <th class="py-2 px-4 text-white">Jumlah</th>
                                     </tr>
                                 </thead>
-                                <tbody id="donationTable" class="text-gray-300">
-                                    <tr>
-                                        <td class="py-2 px-4">Tame</td>
-                                        <td class="py-2 px-4">Untuk perkembangan server!</td>
-                                        <td class="py-2 px-4 text-yellow-500">Rp5.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-4">Luhut</td>
-                                        <td class="py-2 px-4">Untuk perkembangan server!</td>
-                                        <td class="py-2 px-4 text-yellow-500">Rp10.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-4">Vendrika</td>
-                                        <td class="py-2 px-4">Untuk perkembangan server!</td>
-                                        <td class="py-2 px-4 text-yellow-500">Rp50.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-4">Lenn</td>
-                                        <td class="py-2 px-4">Untuk perkembangan server!</td>
-                                        <td class="py-2 px-4 text-yellow-500">Rp10.000</td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="donationTable" class="text-gray-300"></tbody>
                             </table>
                         </div>
                     </div>
@@ -238,7 +217,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <section id="footer" class="bg-zinc-950 text-white py-12">
@@ -275,30 +253,10 @@
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../JS/script.js"></script>
 
+    </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1200,
-    });
-
-    const staffContainer = document.querySelector('.staffBox-item');
-    const scrollLeftButton = document.getElementById('scrollLeft');
-    const scrollRightButton = document.getElementById('scrollRight');
-
-    scrollLeftButton.addEventListener('click', () => {
-        staffContainer.scrollBy({ left: -200, behavior: 'smooth' });
-    });
-
-    scrollRightButton.addEventListener('click', () => {
-        staffContainer.scrollBy({ left: 200, behavior: 'smooth' });
-    });
-
-    function toggleMenu() {
-        const menu = document.getElementById("dropdown-menu");
-        menu.classList.toggle("hidden");
-    }
-</script>
 
 </html>
