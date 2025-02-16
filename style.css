@@ -657,6 +657,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -1055,6 +1060,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1111,6 +1121,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-relaxed {
