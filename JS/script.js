@@ -12,6 +12,15 @@ function toggleMenu() {
     menu.classList.toggle("hidden");
 }
 
+// HAMBURGER MENU
+const hamburger = document.getElementById("hamburger");
+const dropdownMenu = document.getElementById("dropdown-menu");
+
+hamburger.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+});
+
+// DONATION DATABASE
 document.addEventListener("DOMContentLoaded", function () {
     console.log("✅ DOM Loaded!");
 
@@ -19,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("🔍 Table body :", tableBody);
 
     if (!tableBody) {
-        console.error("❌ ERROR: Elemen 'donationTable' tidak ditemukan di DOM!");
+        console.error("❌ ERROR : Elemen 'donationTable' tidak ditemukan di DOM!");
         return;
     }
 
@@ -41,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("⚠️ Error fetching donation data:", error));
 });
 
+// STAFF DATABASE
 document.addEventListener("DOMContentLoaded", function () {
     fetch("../database/staff.json")
         .then(response => response.json())
@@ -75,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error fetching staff data:", error));
 });
 
-
+// LEADERBAORD DATABASE
 document.addEventListener("DOMContentLoaded", async function () {
     const leaderboardList = document.getElementById("leaderboard-list");
 

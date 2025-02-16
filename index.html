@@ -19,80 +19,65 @@
 </style>
 
 <body>
-    <header
-        class="fixed top-0 left-0 flex items-center justify-between px-6 py-4 w-full z-50 bg-black/50 backdrop-blur-md text-white">
-        <div class="flex">
-            <img src="assets/img/logo2.png" class="w-20 sm:w-32" alt="smkn5kiev">
+    <!-- Header/Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md text-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="assets/img/logo2.png" class="w-24 sm:w-32" alt="smkn5kiev">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#home" class="text-white hover:text-yellow-500 transition-all duration-300">Home</a>
+                <a href="#about" class="text-white hover:text-yellow-500 transition-all duration-300">About</a>
+                <a href="pages/leaderboard.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Leaderboard</a>
+                <a href="pages/staff.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Staff</a>
+                <a href="pages/donate.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Donate</a>
+                <a href="pages/rules.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Rules</a>
+                <a href="pages/recruitment.html"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-2 rounded-lg transition-all duration-300">Recruitment</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="hamburger"
+                class="block md:hidden focus:outline-none transition-transform duration-300 transform hover:scale-125">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="dropdown-menu"
+                class="hidden md:hidden absolute top-16 right-4 w-64 bg-black/90 border border-yellow-400 p-4 rounded-xl shadow-lg text-center backdrop-blur-lg transition-all duration-300">
+                <a href="#home"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏠
+                    Home</a>
+                <a href="#about"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">ℹ️
+                    About</a>
+                <a href="pages/leaderboard.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏆
+                    Leaderboard</a>
+                <a href="pages/staff.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">👥
+                    Staff</a>
+                <a href="pages/donate.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">💰
+                    Donate</a>
+                <a href="pages/rules.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">📜
+                    Rules</a>
+                <a href="pages/recruitment.html"
+                    class="block text-white bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg transition-all duration-300">📚
+                    Recruitment</a>
+            </div>
         </div>
-        <button id="hamburger"
-            class="block md:hidden focus:outline-none transition-transform duration-300 transform hover:scale-125"
-            onclick="toggleMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-        <nav id="nav-menu" class="hidden md:flex gap-5">
-            <ul class="flex flex-col md:flex-row gap-5">
-                <li><a href="#home" class="text-white hover:text-yellow-500 transition-all duration-300">Home</a></li>
-                <li><a href="#about" class="text-white hover:text-yellow-500 transition-all duration-300">About</a></li>
-                <li><a href="channel/leaderboard.html"
-                        class="text-white hover:text-yellow-500 transition-all duration-300">Leaderboard</a></li>
-                <li><a href="channel/staff.html"
-                        class="text-white hover:text-yellow-500 transition-all duration-300">Staff</a></li>
-                <li><a href="channel/donate.html"
-                        class="text-white hover:text-yellow-500 transition-all duration-300">Donate</a></li>
-                <li><a href="channel/rules.html"
-                        class="text-white hover:text-yellow-500 transition-all duration-300">Rules</a></li>
-                <li><a href="channel/recruitment.html"
-                        class="text-white hover:text-white bg-yellow-500 hover:bg-yellow-600 rounded-lg items-center px-5 py-2 transition-all duration-300">Recruitment</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Dropdown menu for mobile -->
-        <nav id="dropdown-menu"
-            class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 w-11/12 bg-black/80 border border-yellow-400 p-4 rounded-xl shadow-lg transform transition-all duration-300 hidden text-center backdrop-blur-lg">
-            <ul class="space-y-2">
-                <li>
-                    <a href="#home"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        🏠 Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#about"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        ℹ️ About
-                    </a>
-                </li>
-                <li>
-                    <a href="channel/leaderboard.html"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        🏆 Leaderboard
-                    </a>
-                </li>
-                <li>
-                    <a href="channel/staff.html"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        👥 Staff
-                    </a>
-                    <a href="channel/donate.html"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        💰 Donate
-                    </a>
-                    <a href="channel/rules.html"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        📜 Rules
-                    </a>
-                    <a href="channel/recruitment.html"
-                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
-                        📚 Recruitment
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
     </header>
 
     <!-- SECTION HOME -->

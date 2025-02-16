@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://kit.fontawesome.com/924d8b81d8.js" crossorigin="anonymous"></script>
+    <title>Staff</title>
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md text-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="../index.html">
+                <img src="../assets/img/logo2.png" class="w-24 sm:w-32" alt="smkn5kiev">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="../index.html#home"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Home</a>
+                <a href="../index.html#about"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">About</a>
+                <a href="leaderboard.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Leaderboard</a>
+                <a href="staff.html" class="text-white hover:text-yellow-500 transition-all duration-300">Staff</a>
+                <a href="donate.html" class="text-white hover:text-yellow-500 transition-all duration-300">Donate</a>
+                <a href="rules.html" class="text-white hover:text-yellow-500 transition-all duration-300">Rules</a>
+                <a href="recruitment.html"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-2 rounded-lg transition-all duration-300">Recruitment</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="hamburger"
+                class="block md:hidden focus:outline-none transition-transform duration-300 transform hover:scale-125">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="dropdown-menu"
+                class="hidden md:hidden absolute top-16 right-4 w-64 bg-black/90 border border-yellow-400 p-4 rounded-xl shadow-lg text-center backdrop-blur-lg transition-all duration-300">
+                <a href="../index.html#home"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏠
+                    Home</a>
+                <a href="../index.html#about"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">ℹ️
+                    About</a>
+                <a href="leaderboard.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏆
+                    Leaderboard</a>
+                <a href="staff.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">👥
+                    Staff</a>
+                <a href="donate.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">💰
+                    Donate</a>
+                <a href="rules.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">📜
+                    Rules</a>
+                <a href="recruitment.html"
+                    class="block text-white bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg transition-all duration-300">📚
+                    Recruitment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Organizational Structure of SMKN 5 KIEV -->
+    <div class="sectionOrganization bg-black/90 bg-cover bg-center min-h-screen flex flex-col justify-center text-white pt-32"
+        id="organization">
+        <div class="organizationContainer container mx-auto px-4" data-aos="fade-up">
+            <div class="organizationBox bg-black/25 bg-opacity-75 rounded-lg shadow-lg p-7">
+                <div class="organizationBox-item">
+                    <div class="organizationBox-itemTitle text-center mb-6">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+                            👥 <span class="text-yellow-500">ORGANIZATIONAL STRUCTURE</span> SMKN 5 KIEV
+                        </h1>
+                    </div>
+
+                    <!-- Container for divisions -->
+                    <div class="organizationBox-itemList flex flex-wrap gap-4 justify-center">
+                        <!-- Community Manager -->
+                        <div
+                            class="bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg font-semibold text-white">Community Manager (Admin)</h2>
+                            <p class="text-gray-400 text-sm mt-2">Leads and oversees the server, makes major decisions,
+                                and
+                                ensures smooth community operations.</p>
+                        </div>
+
+                        <!-- Division Manager -->
+                        <div
+                            class="bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg font-semibold text-white">Division Manager</h2>
+                            <p class="text-gray-400 text-sm mt-2">Responsible for managing and supervising each division
+                                within the community.</p>
+                        </div>
+
+                        <!-- Team Management -->
+                        <div
+                            class="bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg font-semibold text-white">Team Management (Staff)</h2>
+                            <p class="text-gray-400 text-sm mt-2">Includes all the divisions below, with a Manager
+                                overseeing each division.</p>
+                        </div>
+
+                        <!-- List of Divisions -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full">
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Developer</h3>
+                                <p class="text-gray-400 text-sm">Manages the website and server bots, ensuring the
+                                    system
+                                    runs smoothly.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Human Resource (HRD)</h3>
+                                <p class="text-gray-400 text-sm">Recruits new staff, oversees evaluations, and resolves
+                                    internal issues.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Brand Ambassador</h3>
+                                <p class="text-gray-400 text-sm">Promotes the community and maintains a positive server
+                                    image.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Event Organizer</h3>
+                                <p class="text-gray-400 text-sm">Plans and executes engaging and beneficial events.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Chat Moderator</h3>
+                                <p class="text-gray-400 text-sm">Monitors chats, enforces rules, and fosters positive
+                                    interactions.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Host Event</h3>
+                                <p class="text-gray-400 text-sm">Hosts events and actively interacts with members.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Designer</h3>
+                                <p class="text-gray-400 text-sm">Creates server designs, banners, and logos.</p>
+                            </div>
+
+                            <div
+                                class="bg-zinc-800 bg-opacity-90 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-base font-semibold text-yellow-400">Partner Manager</h3>
+                                <p class="text-gray-400 text-sm">Manages partnerships and maintains good relationships
+                                    with
+                                    server partners.</p>
+                            </div>
+                        </div>
+
+                        <!-- Trainee -->
+                        <div
+                            class="bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg font-semibold text-white">Trainee</h2>
+                            <p class="text-gray-400 text-sm mt-2">Learns the server work system before being placed in a
+                                suitable division.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STAFF -->
+    <section id="staff" class="bg-black/90 px-5 text-white py-12 min-h-screen flex flex-col justify-center gap-10">
+        <div class="bg-black/20 p-10 container mx-auto rounded-lg shadow-lg h-full" data-aos="fade-up">
+            <div id="staff-list"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-zinc-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Logo & Deskripsi -->
+                <div class="text-center md:text-left" data-aos="fade-out" data-aos-anchor-placement="top-bottom">
+                    <img src="../assets/img/logo2.png" class="w-52 mx-auto md:mx-0">
+                    <p class="text-sm sm:text-base leading-relaxed mt-4 max-w-md mx-auto md:mx-0">
+                        We created this server to have fun and build a friendly community. We’d be thrilled if you
+                        joined us, and we’re here to welcome you with open arms! Let’s make some great memories
+                        together!
+                    </p>
+                </div>
+
+                <!-- Sosial Media -->
+                <div class="flex flex-col items-center md:items-end space-y-4" data-aos="fade-out"
+                    data-aos-anchor-placement="top-bottom">
+                    <h2 class="text-lg sm:text-xl font-semibold">Follow Us</h2>
+                    <div class="flex gap-6">
+                        <a href="https://discord.gg/MwNE7Vfb6t"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-discord text-3xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@smkn5kiev.id"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-tiktok text-3xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/smkn5kiev.id/"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garis Pemisah -->
+            <div class="border-t border-gray-800 mt-8 pt-4 text-center text-sm text-gray-400">
+                © 2025 SMKN 5 KIEV. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../JS/script.js"></script>
+
+</html>

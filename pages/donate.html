@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://kit.fontawesome.com/924d8b81d8.js" crossorigin="anonymous"></script>
+    <title>Donate</title>
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md text-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="../index.html">
+                <img src="../assets/img/logo2.png" class="w-24 sm:w-32" alt="smkn5kiev">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="../index.html#home"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Home</a>
+                <a href="../index.html#about"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">About</a>
+                <a href="leaderboard.html"
+                    class="text-white hover:text-yellow-500 transition-all duration-300">Leaderboard</a>
+                <a href="staff.html" class="text-white hover:text-yellow-500 transition-all duration-300">Staff</a>
+                <a href="donate.html" class="text-white hover:text-yellow-500 transition-all duration-300">Donate</a>
+                <a href="rules.html" class="text-white hover:text-yellow-500 transition-all duration-300">Rules</a>
+                <a href="recruitment.html"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-2 rounded-lg transition-all duration-300">Recruitment</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="hamburger"
+                class="block md:hidden focus:outline-none transition-transform duration-300 transform hover:scale-125">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="dropdown-menu"
+                class="hidden md:hidden absolute top-16 right-4 w-64 bg-black/90 border border-yellow-400 p-4 rounded-xl shadow-lg text-center backdrop-blur-lg transition-all duration-300">
+                <a href="../index.html#home"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏠
+                    Home</a>
+                <a href="../index.html#about"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">ℹ️
+                    About</a>
+                <a href="leaderboard.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">🏆
+                    Leaderboard</a>
+                <a href="staff.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">👥
+                    Staff</a>
+                <a href="donate.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">💰
+                    Donate</a>
+                <a href="rules.html"
+                    class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">📜
+                    Rules</a>
+                <a href="recruitment.html"
+                    class="block text-white bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg transition-all duration-300">📚
+                    Recruitment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Donation List -->
+    <section
+        class="sectionDonate bg-black/90 bg-cover bg-center min-h-screen flex flex-col justify-center text-white py-32"
+        id="donate">
+        <div class="donateContainer container mx-auto px-4" data-aos="fade-up">
+            <div class="donateBox bg-black/25 bg-opacity-75 rounded-lg shadow-lg p-7">
+                <div class="donateBox-item">
+                    <div class="donateBox-itemTitle text-center mb-6">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+                            💰 SUPPORT US <span class="text-yellow-500">BY DONATE TO SERVER</span>
+                        </h1>
+                        <p class="text-gray-400 text-sm mt-2">Donasi dari kamu bisa membantu kami membangun negeri</p>
+                    </div>
+
+                    <!-- Container for donation options -->
+                    <div class="donateBox-itemList flex flex-wrap gap-4 justify-center">
+                        <!-- Donation Option 1 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💷 Contributor</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapat role @Contributor</li>
+                                <li>Bebas request Custom Role</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>+3 Arcane Level</li>
+                                <li>Di-display dibawah role Trainee</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Permanent Role</p>
+                                <p class="text-xs text-gray-400">* Minimal donate 50k</p>
+                                <p class="text-xs text-gray-400">* Bagian "pesan" isi nickname discord</p>
+                                <p class="text-xs text-gray-400">* Sudah berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Rp50.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 2 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💶 Donator</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Donator</li>
+                                <li>Bebas request custom role</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>+1 Arcane Level</li>
+                                <li>Di-display dibawah Contributor</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Permanent Role</p>
+                                <p class="text-xs text-gray-400">* Non-permanent Custom Role</p>
+                                <p class="text-xs text-gray-400">* Bagian "pesan" isi nickname discord</p>
+                                <p class="text-xs text-gray-400">* sudah berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Rp10.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 3 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💵 Booster</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Booster</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Di-display dibawah role @Donator</li>
+                                <li>Bebas request Custom Role</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Berlaku selama Nitro Boost Aktif</p>
+                                <p class="text-xs text-gray-400">* Buka ticket untuk claim benefit</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Boost Server</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 4 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💴 Benefactor</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Benefactor</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Di-display dibawah role @Booster</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Berlaku selama 1 bulan</p>
+                                <p class="text-xs text-gray-400">* Ingin berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">1.000.000 UwU</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <p
+                            class="py-2 px-5  bg-yellow-500 my-5 mx-auto max-w-40 text-center rounded-lg shadow-lg transition-all duration-300 hover:bg-yellow-600">
+                            <a href="https://sociabuzz.com/phionne/tribe" target="_blank"
+                                class="text-white font-semibold">Donate
+                                Now</a>
+                        </p>
+                    </div>
+                    <!-- Donation Log -->
+                    <div class="donationLog bg-zinc-900 rounded-lg p-5 mt-10 shadow-lg">
+                        <h2 class="text-lg sm:text-xl font-semibold text-yellow-500 text-center mb-4">📝 Donation Log
+                        </h2>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gray-700">
+                                        <th class="py-2 px-4 text-white">Nama</th>
+                                        <th class="py-2 px-4 text-white">Note</th>
+                                        <th class="py-2 px-4 text-white">Jumlah</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="donationTable" class="text-gray-300"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-zinc-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Logo & Deskripsi -->
+                <div class="text-center md:text-left" data-aos="fade-out" data-aos-anchor-placement="top-bottom">
+                    <img src="../assets/img/logo2.png" class="w-52 mx-auto md:mx-0">
+                    <p class="text-sm sm:text-base leading-relaxed mt-4 max-w-md mx-auto md:mx-0">
+                        We created this server to have fun and build a friendly community. We’d be thrilled if you
+                        joined us, and we’re here to welcome you with open arms! Let’s make some great memories
+                        together!
+                    </p>
+                </div>
+
+                <!-- Sosial Media -->
+                <div class="flex flex-col items-center md:items-end space-y-4" data-aos="fade-out"
+                    data-aos-anchor-placement="top-bottom">
+                    <h2 class="text-lg sm:text-xl font-semibold">Follow Us</h2>
+                    <div class="flex gap-6">
+                        <a href="https://discord.gg/MwNE7Vfb6t"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-discord text-3xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@smkn5kiev.id"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-tiktok text-3xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/smkn5kiev.id/"
+                            class="text-yellow-500 hover:text-yellow-400 transition transform hover:scale-110">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garis Pemisah -->
+            <div class="border-t border-gray-800 mt-8 pt-4 text-center text-sm text-gray-400">
+                © 2025 SMKN 5 KIEV. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../JS/script.js"></script>
+
+    </script>
+</body>
+
+</html>
