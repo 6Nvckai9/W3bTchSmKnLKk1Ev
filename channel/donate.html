@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <title>LEADERBOARD</title>
+</head>
+
+<body>
+    <header
+        class="fixed top-0 left-0 flex items-center justify-between px-6 py-4 w-full z-50 bg-black/50 backdrop-blur-md text-white">
+        <div>
+            <h1 class="text-2xl font-bold">SMKN<span class="font-extrabold">5KIEV</span></h1>
+        </div>
+        <button id="hamburger"
+            class="block md:hidden focus:outline-none transition-transform duration-300 transform hover:scale-125"
+            onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex gap-5">
+            <ul class="flex flex-col md:flex-row gap-5">
+                <li><a href="../index.html#home"
+                        class="text-white hover:text-yellow-500 transition-all duration-300">Home</a></li>
+                <li><a href="../index.html#about"
+                        class="text-white hover:text-yellow-500 transition-all duration-300">About</a></li>
+                <li><a href="leaderboard.html"
+                        class="text-white hover:text-yellow-500 transition-all duration-300">Leaderboard</a></li>
+                <li><a href="staff.html" class="text-white hover:text-yellow-500 transition-all duration-300">Staff</a>
+                </li>
+                <li><a href="donate.html"
+                        class="text-white hover:text-yellow-500 transition-all duration-300">Donate</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Dropdown menu for mobile -->
+        <nav id="dropdown-menu"
+            class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 w-11/12 bg-black/80 border border-yellow-400 p-4 rounded-xl shadow-lg transform transition-all duration-300 hidden text-center backdrop-blur-lg">
+            <ul class="space-y-2">
+                <li>
+                    <a href="../index.html#home"
+                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
+                        🏠 Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#about"
+                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
+                        ℹ️ About
+                    </a>
+                </li>
+                <li>
+                    <a href="leaderboard.html"
+                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
+                        🏆 Leaderboard
+                    </a>
+                </li>
+                <li>
+                    <a href="staff.html"
+                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
+                        👥 Staff
+                    </a>
+                    <a href="donate.html"
+                        class="block text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300">
+                        💰 Donate
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Donation List -->
+    <div class="sectionDonate bg-black/90 bg-cover bg-center min-h-screen flex flex-col justify-center text-white py-12"
+        id="donate">
+        <div class="donateContainer container mx-auto px-4" data-aos="fade-up">
+            <div class="donateBox bg-black/25 bg-opacity-75 rounded-lg shadow-lg p-7">
+                <div class="donateBox-item">
+                    <div class="donateBox-itemTitle text-center mb-6">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+                            SUPPORT US <span class="text-yellow-500">BY DONATING</span>
+                        </h1>
+                        <p class="text-gray-400 text-sm mt-2">Your donation helps us grow and improve</p>
+                    </div>
+
+                    <!-- Container for donation options -->
+                    <div class="donateBox-itemList flex flex-wrap gap-4 justify-center">
+                        <!-- Donation Option 1 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💷 Contributor</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapat role @Contributor</li>
+                                <li>Bebas request Custom Role</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Mendapatkan tambahan +3 Arcane Level</li>
+                                <li>Nama di-display dibawah role Trainee</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Permanent Role</p>
+                                <p class="text-xs text-gray-400">* Minimal donate 50k</p>
+                                <p class="text-xs text-gray-400">* Isi bagian "pesan" dengan nickname discord</p>
+                                <p class="text-xs text-gray-400">* Sudah berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Rp50.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 2 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💶 Donator</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Donator</li>
+                                <li>Bebas request custom role</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Mendapatkan tambahan +1 Arcane Level</li>
+                                <li>Nama di-display dibawah Contributor</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Permanent Role</p>
+                                <p class="text-xs text-gray-400">* Non-permanent Custom Role</p>
+                                <p class="text-xs text-gray-400">* Isi bagian "pesan" dengan nickname discord</p>
+                                <p class="text-xs text-gray-400">* sudah berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Rp10.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 3 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💵 Booster</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Booster</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Nama di-display dibawah role @Donator</li>
+                                <li>Bebas request Custom Role</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Berlaku selama Nitro Boost Aktif</p>
+                                <p class="text-xs text-gray-400">* Buka ticket untuk claim benefit</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">Boost Server</span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Option 4 -->
+                        <div
+                            class="flex flex-col gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-96 sm:w-80 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                            <h2 class="text-lg sm:text-xl font-semibold text-white text-center">💴 Benefactor</h2>
+                            <ul class="text-sm text-gray-300 list-disc list-inside">
+                                <li>Mendapatkan role @Benefactor</li>
+                                <li>Bisa mengganti nama sesuka hati</li>
+                                <li>Nama di-display dibawah role @Booster</li>
+                            </ul>
+                            <div>
+                                <p class="text-xs text-gray-400">* Berlaku selama 1 bulan</p>
+                                <p class="text-xs text-gray-400">* Sudah berdonasi? Silahkan buka ticket</p>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <span class="text-lg font-bold text-yellow-500">1.000.000 UwU</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <p
+                            class="py-2 px-5 bg-yellow-400 my-5 mx-auto max-w-40 text-center rounded-lg shadow-lg transition-all duration-300 hover:bg-yellow-500">
+                            <a href="https://sociabuzz.com/phionne/tribe" target="_blank"
+                                class="text-black font-semibold">Donate
+                                Now</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <section id="footer" class="bg-zinc-950 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class=" flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0 md:mr-8" data-aos="fade-out">
+                    <h1 class="text-xl sm:text-3xl font-bold mb-4 text-yellow-500">SMKN 5 KIEV</h1>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        We created this server to have fun and build a friendly community. We’d be thrilled if you
+                        joined us, and we’re here to welcome you with open arms! Whether you’re looking to make new
+                        friends,
+                        share your interests, or just chill, there’s a place for everyone here. Join us, and let’s make
+                        some
+                        great memories together!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+
+    const staffContainer = document.querySelector('.staffBox-item');
+    const scrollLeftButton = document.getElementById('scrollLeft');
+    const scrollRightButton = document.getElementById('scrollRight');
+
+    scrollLeftButton.addEventListener('click', () => {
+        staffContainer.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    scrollRightButton.addEventListener('click', () => {
+        staffContainer.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    function toggleMenu() {
+        const menu = document.getElementById("dropdown-menu");
+        menu.classList.toggle("hidden");
+    }
+</script>
+
+</html>
