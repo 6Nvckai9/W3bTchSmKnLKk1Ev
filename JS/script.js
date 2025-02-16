@@ -107,3 +107,30 @@ document.addEventListener("DOMContentLoaded", async function () {
         console.error("Gagal mengambil data leaderboard:", error);
     }
 });
+
+// CHANGE IMAGE
+document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+        "./assets/img/yuki.png",
+        "./assets/img/yuki2.png",
+        "./assets/img/yuki3.png"
+    ];
+    let index = 0;
+    const bgCurrent = document.getElementById("home-bg");
+    const bgNext = document.getElementById("home-bg-next");
+
+    function changeBackground() {
+        index = (index + 1) % images.length;
+        bgNext.style.backgroundImage = `url('${images[index]}')`;
+        bgNext.classList.remove("opacity-0");
+        bgNext.classList.add("opacity-100");
+
+        setTimeout(() => {
+            bgCurrent.style.backgroundImage = bgNext.style.backgroundImage;
+            bgNext.classList.remove("opacity-100");
+            bgNext.classList.add("opacity-0");
+        }, 1000);
+    }
+
+    setInterval(changeBackground, 5000);
+});
