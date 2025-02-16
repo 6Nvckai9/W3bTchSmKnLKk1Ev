@@ -74,3 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error fetching staff data:", error));
 });
+
+
+document.addEventListener("DOMContentLoaded", async function () {
+    const leaderboardList = document.getElementById("leaderboard-list");
+
+    try {
+        const response = await fetch("../database/leaderboard.json");
+        const leaderboardData = await response.json();
+
+        leaderboardList.innerHTML = leaderboardData.map(player => `
+            <div class="flex items-center gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg hover:shadow-xl transition-all border-2 border-yellow-400">
+                <div class="w-12 h-12 sm:w-14 sm:h-14">
+                    <img src="${player.image}" alt="${player.season}" class="w-full h-full object-cover rounded-full border-2 border-gray-500">
+                </div>
+                <div>
+                    <p class="text-sm sm:text-base font-semibold text-white">${player.rank} ${player.season} | ${player.name}</p>
+                </div>
+            </div>
+        `).join("");
+    } catch (error) {
+        console.error("Gagal mengambil data leaderboard:", error);
+    }
+});
