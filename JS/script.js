@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <tr class="border-b border-gray-700">
                         <td class="py-2 px-4">${donation.nama}</td>
                         <td class="py-2 px-4">${donation.note}</td>
-                        <td class="py-2 px-4 text-[#d49163]">${donation.jumlah}</td>
+                        <td class="py-2 px-4 text-[#e7a77c]">${donation.jumlah}</td>
                     </tr>
                 `;
                 tableBody.innerHTML += row;
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const leaderboardData = await response.json();
 
         leaderboardList.innerHTML = leaderboardData.map(player => `
-            <div class="flex items-center gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg hover:shadow-xl transition-all border-2 border-[#aa724d] ">
+            <div class="flex items-center gap-4 bg-zinc-800 bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg hover:shadow-xl transition-all border-2 border-[#e7a77c] ">
                 <div class="w-12 h-12 sm:w-14 sm:h-14">
                     <img src="${player.image}" alt="${player.season}" class="w-full h-full object-cover rounded-full border-2 border-gray-500">
                 </div>
