@@ -104,11 +104,17 @@
                     connect, chat, and have fun together. Join us and see what makes us stand out!
                 </p>
             </div>
-            <button
-                class="px-4 py-2 sm:px-6 sm:py-3 bg-[#aa724d] text-white font-medium text-sm sm:text-lg rounded-lg hover:bg-[#6d4c35] transition-all duration-300"
-                data-aos="fade-right">
-                <a href="#about" class="text-white">Learn More</a>
+            <button class="relative px-4 py-2 sm:px-6 sm:py-3 text-white font-medium text-sm sm:text-lg rounded-lg 
+    overflow-hidden transition-all duration-500 group" data-aos="fade-right"><a href="#about">
+
+                    <span
+                        class="absolute inset-0 bg-[#aa724d] transition-all duration-500 group-hover:opacity-0"></span>
+                    <span
+                        class="absolute inset-0 bg-[#6d4c35] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+
+                    <span class="relative z-10">Learn More</span></button></a>
             </button>
+
         </div>
     </section>
 
