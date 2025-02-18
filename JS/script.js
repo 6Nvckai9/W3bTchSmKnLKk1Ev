@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const leaderboardData = await response.json();
 
         leaderboardList.innerHTML = leaderboardData.map(player => `
-            <div class="flex items-center gap-4 bg-zinc-800 bg-gradient-to-b from-[#2e2e2e] to-black bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg border border-[#e7a77c] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#ffcc99] group cursor-pointer ">
+            <div class="flex items-center gap-4 bg-zinc-800 bg-gradient-to-b from-[#2e2e2e] to-black bg-opacity-90 rounded-xl p-5 w-64 sm:w-72 shadow-lg border-[1px] border-[#e7a77c] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#ffcc99] group cursor-pointer ">
                 <div
                     class="absolute inset-0 rounded-xl bg-[#e7a77c]/20 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
                 </div>
