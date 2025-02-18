@@ -1,0 +1,21 @@
+{
+  "redirects": [
+    {
+      "source": "/:path",
+      "destination": "/:path.html",
+      "has": [
+        {
+          "type": "missing",
+          "value": ".html"
+        }
+      ],
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path",
+      "destination": "/:path.html"
+    }
+  ]
+}
